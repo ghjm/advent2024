@@ -1,0 +1,32 @@
+package main
+
+import (
+	"fmt"
+	"github.com/ghjm/advent2024/pkg/utils"
+	"os"
+)
+
+type data struct {
+	lines []string
+}
+
+func run() error {
+	d := data{}
+	err := utils.OpenAndReadLines("input1.txt", func(s string) error {
+		d.lines = append(d.lines, s)
+		return nil
+	})
+	if err != nil {
+		return err
+	}
+	fmt.Printf("%#v\n", d)
+	return nil
+}
+
+func main() {
+	err := run()
+	if err != nil {
+		fmt.Printf("Error: %s\n", err)
+		os.Exit(1)
+	}
+}
