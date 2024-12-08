@@ -7,7 +7,7 @@ import (
 )
 
 type data struct {
-	board          utils.Board[int]
+	board          *utils.StandardBoard
 	initialPoint   utils.Point[int]
 	initialPointer rune
 }
@@ -62,8 +62,10 @@ func (d *data) runBoard() (map[utils.Point[int]]struct{}, bool) {
 }
 
 func run() error {
-	d := data{}
-	d.board.MustFromFile("input6.txt", '.')
+	d := data{
+		board: utils.NewStandardBoard(),
+	}
+	d.board.MustFromFile("input6.txt")
 	d.board.Transform(func(p utils.Point[int], v rune) rune {
 		_, ok := pointers[v]
 		if ok {
