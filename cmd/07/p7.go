@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/ghjm/advent2024/pkg/utils"
 	"os"
 	"strconv"
 	"strings"
+
+	utils "github.com/ghjm/advent_utils"
 )
 
 type equation struct {

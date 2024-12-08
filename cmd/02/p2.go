@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/ghjm/advent2024/pkg/utils"
 	"os"
 	"strings"
+
+	utils "github.com/ghjm/advent_utils"
 )
 
 type data struct {
