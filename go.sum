@@ -6,5 +6,7 @@ github.com/ghjm/advent_utils v0.0.0-20241210031825-a5bfff95f730 h1:Mgn1jSCMz+lxZ
 github.com/ghjm/advent_utils v0.0.0-20241210031825-a5bfff95f730/go.mod h1:gQTdVT3BO/oqRj+csN1BbdZIJFzj0qokLleRrPOuBp0=
 github.com/ghjm/advent_utils v0.0.0-20241210071813-03e26bc988d4 h1:z/QYvMxEisNZxUSrDz5NMuxond6QU7trup0DEwl1FOE=
 github.com/ghjm/advent_utils v0.0.0-20241210071813-03e26bc988d4/go.mod h1:gQTdVT3BO/oqRj+csN1BbdZIJFzj0qokLleRrPOuBp0=
+github.com/ghjm/advent_utils v0.0.0-20241210081125-8fa94227f927 h1:ACH/DtAWMGsPbfhAs1UPYWxAcNonZBMAnXQVr3HtTfU=
+github.com/ghjm/advent_utils v0.0.0-20241210081125-8fa94227f927/go.mod h1:gQTdVT3BO/oqRj+csN1BbdZIJFzj0qokLleRrPOuBp0=
 golang.org/x/exp v0.0.0-20241204233417-43b7b7cde48d h1:0olWaB5pg3+oychR51GUVCEsGkeCU/2JxjBgIo4f3M0=
 golang.org/x/exp v0.0.0-20241204233417-43b7b7cde48d/go.mod h1:qj5a5QZpwLU2NLQudwIN5koi3beDhSAlJwa67PuM98c=

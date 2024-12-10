@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
+	"github.com/ghjm/advent_utils/board"
 	"os"
 
 	utils "github.com/ghjm/advent_utils"
 )
 
 type data struct {
-	board *utils.RunePlusBoard[int, map[rune]struct{}]
+	board *board.RunePlusBoard[int, map[rune]struct{}]
 }
 
 func (d *data) getAntinodes(harmonics bool) {
@@ -59,7 +60,7 @@ func (d *data) getAntinodes(harmonics bool) {
 
 func (d *data) countAntinodeLocs() int {
 	result := 0
-	d.board.Iterate(func(p utils.Point[int], v utils.RunePlusData[map[rune]struct{}]) bool {
+	d.board.Iterate(func(p utils.Point[int], v board.RunePlusData[map[rune]struct{}]) bool {
 		if len(v.Extra) > 0 {
 			result++
 		}
@@ -70,7 +71,7 @@ func (d *data) countAntinodeLocs() int {
 
 func run() error {
 	d := data{
-		board: utils.NewRunePlusBoard[int, map[rune]struct{}]('.'),
+		board: board.NewRunePlusBoard[int, map[rune]struct{}](),
 	}
 	err := d.board.FromFile("input8.txt")
 	if err != nil {

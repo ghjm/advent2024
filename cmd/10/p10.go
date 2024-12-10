@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
+	"github.com/ghjm/advent_utils/board"
 	"os"
 
 	"github.com/ghjm/advent_utils"
 )
 
 type data struct {
-	board *utils.StdBoard
+	board *board.StdBoard
 }
 
 func (d *data) score(start utils.StdPoint) int {
@@ -57,7 +58,7 @@ func (d *data) rating(p utils.StdPoint) int {
 
 func run() error {
 	d := data{
-		board: utils.NewStdBoard(&utils.FlatBoard{}),
+		board: board.NewStdBoard(board.WithStorage(&board.FlatBoard{})),
 	}
 	err := d.board.FromFile("input10.txt")
 	if err != nil {

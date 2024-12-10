@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
+	"github.com/ghjm/advent_utils/board"
 	"os"
 
 	utils "github.com/ghjm/advent_utils"
 )
 
 type data struct {
-	board          *utils.StandardBoard
+	board          *board.StdBoard
 	initialPoint   utils.Point[int]
 	initialPointer rune
 }
@@ -64,7 +65,7 @@ func (d *data) runBoard() (map[utils.Point[int]]struct{}, bool) {
 
 func run() error {
 	d := data{
-		board: utils.NewStandardBoard(),
+		board: board.NewStdBoard(board.WithStorage(&board.FlatBoard{})),
 	}
 	d.board.MustFromFile("input6.txt")
 	d.board.Transform(func(p utils.Point[int], v rune) rune {
