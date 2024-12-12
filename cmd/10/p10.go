@@ -24,7 +24,7 @@ func (d *data) score(start utils.StdPoint) int {
 		}
 		visited[p] = struct{}{}
 		pv := d.board.Get(p)
-		for _, c := range d.board.Cardinals(p) {
+		for _, c := range d.board.Cardinals(p, false) {
 			if _, ok := visited[c]; ok {
 				continue
 			}
@@ -47,7 +47,7 @@ func (d *data) rating(p utils.StdPoint) int {
 		return 1
 	}
 	sum := 0
-	for _, c := range d.board.Cardinals(p) {
+	for _, c := range d.board.Cardinals(p, false) {
 		cv := d.board.Get(c)
 		if cv == pv+1 {
 			sum += d.rating(c)
