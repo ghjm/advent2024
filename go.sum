@@ -10,5 +10,11 @@ github.com/ghjm/advent_utils v0.0.0-20241210081125-8fa94227f927 h1:ACH/DtAWMGsPb
 github.com/ghjm/advent_utils v0.0.0-20241210081125-8fa94227f927/go.mod h1:gQTdVT3BO/oqRj+csN1BbdZIJFzj0qokLleRrPOuBp0=
 github.com/ghjm/advent_utils v0.0.0-20241212071307-5ad6183419a7 h1:fjFI6w3SK8jobdvqWK1cb4QLW+ufYkzwFIYdhEeyxVc=
 github.com/ghjm/advent_utils v0.0.0-20241212071307-5ad6183419a7/go.mod h1:gQTdVT3BO/oqRj+csN1BbdZIJFzj0qokLleRrPOuBp0=
+github.com/ghjm/advent_utils v0.0.0-20241212225113-19df5e3f31e0 h1:xDeGiHVBeEA8lsM4zX6godL1FKOypbvIDHs6m0jZSdc=
+github.com/ghjm/advent_utils v0.0.0-20241212225113-19df5e3f31e0/go.mod h1:gQTdVT3BO/oqRj+csN1BbdZIJFzj0qokLleRrPOuBp0=
+github.com/ghjm/advent_utils v0.0.0-20241216042436-49f15ffbffa9 h1:oiBkCeXvWmtJqMG8v37t0LtFHLHDvvmlNh8Lc4go7wM=
+github.com/ghjm/advent_utils v0.0.0-20241216042436-49f15ffbffa9/go.mod h1:gQTdVT3BO/oqRj+csN1BbdZIJFzj0qokLleRrPOuBp0=
+github.com/ghjm/advent_utils v0.0.0-20241216042714-25795ecae97a h1:ONPdABUIfdvxs91cl5Mfod8US6+S1+V8y71TkhCpiNs=
+github.com/ghjm/advent_utils v0.0.0-20241216042714-25795ecae97a/go.mod h1:gQTdVT3BO/oqRj+csN1BbdZIJFzj0qokLleRrPOuBp0=
 golang.org/x/exp v0.0.0-20241204233417-43b7b7cde48d h1:0olWaB5pg3+oychR51GUVCEsGkeCU/2JxjBgIo4f3M0=
 golang.org/x/exp v0.0.0-20241204233417-43b7b7cde48d/go.mod h1:qj5a5QZpwLU2NLQudwIN5koi3beDhSAlJwa67PuM98c=
