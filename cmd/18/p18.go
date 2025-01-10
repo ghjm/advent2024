@@ -17,7 +17,7 @@ type data struct {
 
 func boardToGraph(b *board.StdBoard) graph.Graph[utils.StdPoint] {
 	g := graph.Graph[utils.StdPoint]{}
-	g.BuildStateGraph(utils.StdPoint{}, func(point utils.StdPoint) []graph.Edge[utils.StdPoint] {
+	g.CreateStateGraph(utils.StdPoint{}, func(point utils.StdPoint) []graph.Edge[utils.StdPoint] {
 		var e []graph.Edge[utils.StdPoint]
 		for _, np := range b.Cardinals(point, false) {
 			if b.Get(np) != '#' {

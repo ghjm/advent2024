@@ -49,7 +49,7 @@ func run() error {
 		}
 		return true
 	})
-	d.graph.BuildStateGraph(d.initialState, func(s state) []graph.Edge[state] {
+	d.graph.CreateStateGraph(d.initialState, func(s state) []graph.Edge[state] {
 		var edges []graph.Edge[state]
 		edges = append(edges, graph.Edge[state]{
 			Dest: state{s.pos, utils.Mod(s.facing+1, 4)},
